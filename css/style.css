@@ -1,0 +1,114 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4; /* Light grey background */
+  color: #333; /* Dark grey text color */
+  margin: 20px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.left-column,
+.right-column {
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.left-column {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #e0e0e0; /* Light grey color for left column */
+}
+
+.right-column {
+  width: 100%;
+  background-color: #f9f9f9; /* Slightly off-white color for right column */
+}
+
+@media (min-width: 600px) {
+  .left-column {
+    width: 30%;
+    margin-bottom: 0; /* Remove bottom margin on larger screens */
+    border-right: 2px solid #dcdcdc; /* Light grey border */
+  }
+
+  .right-column {
+    width: 65%;
+  }
+}
+
+h1 {
+  color: #2c3e50; /* Dark blue color for main heading */
+  margin-bottom: 10px;
+  font-size: 2em; /* Larger font size for main heading */
+}
+
+h2 {
+  color: #34495e; /* Dark grey-blue color for subheadings */
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Larger font size for subheadings */
+}
+
+h3 {
+  color: #7f8c8d; /* Grey color for section headings */
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Larger font size for section headings */
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #2980b9; /* Blue color for links */
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+  color: #e74c3c; /* Red color on hover */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333; /* Dark grey color for list items */
+}
+
+li {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.left-column p,
+.right-column p {
+  color: #666; /* Medium grey color for paragraph text */
+}
+
+.left-column {
+  border-right: none; /* Remove border for smaller screens */
+}
+
+@media (min-width: 600px) {
+  .left-column {
+    border-right: 2px solid #dcdcdc;
+  }
+}
